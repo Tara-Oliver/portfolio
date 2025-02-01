@@ -1,0 +1,2098 @@
+/*
+! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  /* border-color: #e5e7eb; */
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+  tab-size: 4;
+  /* 3 */
+  /* font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  background-color: #fef7f2;
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  font-size: 1em;
+
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*,
+::before,
+::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+}
+
+/* .\!container {
+  width: 100% !important;
+} */
+
+/* .container {
+  width: 100%;
+} */
+
+ul,
+li {
+  /* margin: 0px; */
+  padding: 0px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+html {
+  margin: 0px;
+  overflow-x: hidden;
+  padding: 0px;
+  /* overflow-y: hidden; */
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  --tw-bg-opacity: 1;
+  /* background-color: rgb(246 251 255 / var(--tw-bg-opacity)); */
+  /* font-family: Open Sans, sans-serif; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0px;
+  --tw-text-opacity: 1;
+  color: rgb(125 119 137 / var(--tw-text-opacity));
+}
+
+svg {
+  height: 15px;
+  width: 15px;
+  fill: currentColor;
+}
+
+img.svg {
+  height: 15px;
+  width: 15px;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+} */
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+.cavani_tm_all_wrap,
+.cavani_tm_all_wrap * {
+  /* box-sizing: border-box; */
+}
+
+/* .cavani_tm_header .menu ul li.mleave.active a {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+} */
+
+/* .cavani_tm_header .menu ul li.mleave.\!active a {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+} */
+
+/* .cavani_tm_header .menu ul li.active a {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+} */
+
+/* .cavani_tm_header .menu ul li.\!active a {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+} */
+
+/* .cavani_tm_header .menu ul li a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+} */
+
+.cavani_tm_section {
+  visibility: hidden;
+  /* position: absolute; */
+  /* top: 0px; */
+  /* right: 0px; */
+  /* bottom: 0px; */
+  /* left: 0px; */
+  z-index: 8;
+  overflow: hidden;
+  overflow-y: scroll;
+  opacity: 0;
+}
+
+.cavani_tm_section.animated {
+  visibility: visible;
+  z-index: 9;
+  opacity: 1;
+}
+
+.cavani_tm_section.active {
+  visibility: visible;
+  z-index: 10;
+  opacity: 1;
+}
+
+.cavani_tm_section.\!active {
+  visibility: visible;
+  z-index: 10;
+  opacity: 1;
+}
+
+.cavani_tm_section.hidden {
+  visibility: hidden;
+  z-index: 9;
+  opacity: 0;
+}
+
+.cavani_tm_section.\!hidden {
+  visibility: hidden;
+  z-index: 9;
+  opacity: 0;
+}
+
+.cavani_tm_section::-webkit-scrollbar {
+  width: 0px;
+}
+
+.cavani_tm_section .section_inner {
+  position: relative;
+  float: left;
+  clear: both;
+  height: auto;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 92px;
+  padding-bottom: 0px;
+}
+
+.cavani_tm_section .section_inner:before {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100px;
+  --tw-bg-opacity: 1;
+  /* background-color: rgb(246 251 255 / var(--tw-bg-opacity)); */
+  /* background-color: red; */
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+/* .cavani_tm_home .job span {
+  --tw-text-opacity: 1;
+  color: rgb(125 119 137 / var(--tw-text-opacity));
+} */
+
+/* .cavani_tm_home .job b {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+} */
+
+/* .cavani_tm_button {
+  float: left;
+  clear: both;
+  height: auto;
+  width: 100%;
+} */
+
+.cavani_tm_button a {
+  /* display: inline-block; */
+  /* border-width: 2px; */
+  /* border-style: solid; */
+  /* --tw-border-opacity: 1; */
+  /* border-color: rgb(51 51 51 / var(--tw-border-opacity)); */
+  /* --tw-bg-opacity: 1; */
+  /* background-color: rgb(51 51 51 / var(--tw-bg-opacity)); */
+  /* padding-left: 38px; */
+  /* padding-right: 38px; */
+  /* padding-top: 13px; */
+  /* padding-bottom: 13px; */
+  /* font-family: Poppins, sans-serif; */
+  /* font-weight: 500; */
+  /* --tw-text-opacity: 1; */
+  /* color: rgb(255 255 255 / var(--tw-text-opacity)); */
+  /* transition-property: all; */
+  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  /* transition-duration: 300ms; */
+}
+
+.cavani_tm_button a:hover {
+  /* background-color: transparent; */
+  /* --tw-text-opacity: 1; */
+  /* color: rgb(51 51 51 / var(--tw-text-opacity)); */
+}
+
+/* .cd-headline.clip .cd-words-wrapper::after {
+  top: 50%;
+  height: 70%;
+  width: 2px;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 153 153 / var(--tw-bg-opacity));
+} */
+
+.cd-headline.loading-bar .cd-words-wrapper::after {
+  height: 2px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+}
+
+.cavani_tm_title span:after {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-left: 30px;
+  height: 1px;
+  width: 5000px;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 119 137 / var(--tw-bg-opacity));
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.cavani_progress {
+  float: left;
+  clear: both;
+  margin-top: 55px;
+  height: auto;
+  width: 100%;
+}
+
+.progress_inner span.\!number {
+  float: right;
+}
+
+.progress_inner span.number {
+  float: right;
+}
+
+.progress_inner .background {
+  position: relative;
+  height: 3px;
+  width: 100%;
+  min-width: 100%;
+  background-color: rgba(0, 0, 0, .07);
+}
+
+.progress_inner .background .bar_in {
+  height: 100%;
+  width: 0px;
+  overflow: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 119 137 / var(--tw-bg-opacity));
+}
+
+.progress_inner .background .bar {
+  height: 100%;
+  width: 0px;
+}
+
+.progress_inner .background .\!bar {
+  height: 100%;
+  width: 0px;
+}
+
+.circular_progress_bar {
+  float: left;
+  clear: both;
+  margin-top: 62px;
+  height: auto;
+  width: 100%;
+}
+
+.circular_progress_bar ul {
+  margin-left: -20px;
+}
+
+.circular_progress_bar ul li {
+  float: left;
+  margin-bottom: 20px;
+  width: 33.333333%;
+  padding-left: 20px;
+}
+
+.circular_progress_bar .myCircle {
+  position: relative;
+  float: left;
+}
+
+.circular_progress_bar .list_inner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.circular_progress_bar .title {
+  float: left;
+  width: 100%;
+  max-width: 120px;
+}
+
+.circular_progress_bar .\!title {
+  float: left;
+  width: 100%;
+  max-width: 120px;
+}
+
+.circular_progress_bar .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.circular_progress_bar .\!number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cavani_tm_about .univ ul:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 1px;
+  background-color: rgba(0, 0, 0, .07);
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.cavani_tm_about .univ ul li:before {
+  position: absolute;
+  left: -9px;
+  top: 8px;
+  height: 18px;
+  width: 18px;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(204 204 204 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 251 255 / var(--tw-bg-opacity));
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.cavani_tm_full_link {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 5;
+}
+
+.cavani_tm_about .testimonials .owl-carousel .owl-stage-outer {
+  overflow: hidden;
+  overflow: visible;
+}
+
+.cavani_tm_about .testimonials .owl-item.active {
+  opacity: 1;
+}
+
+.cavani_tm_about .testimonials .owl-item.\!active {
+  opacity: 1;
+}
+
+.cavani_tm_about .testimonials .owl-item {
+  opacity: 0;
+}
+
+.cavani_tm_portfolio .portfolio_list ul li .details {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0px;
+  z-index: 3;
+  --tw-translate-y: 102%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 15px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.cavani_tm_portfolio .portfolio_list ul li .list_inner:hover .details {
+  bottom: 20px;
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cavani_tm_modalbox {
+  visibility: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 20;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .8);
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.cavani_tm_modalbox.opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cavani_tm_modalbox .box_inner {
+  visibility: hidden;
+  position: absolute;
+  top: 70px;
+  bottom: 70px;
+  left: 50%;
+  z-index: 1;
+  margin-top: -20px;
+  width: 968px;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.cavani_tm_modalbox.opened .box_inner {
+  visibility: visible;
+  margin-top: 0px;
+  opacity: 1;
+}
+
+.cavani_tm_modalbox .close {
+  position: fixed;
+  left: 100%;
+  top: 0px;
+  z-index: 10;
+  margin-left: 30px;
+}
+
+.cavani_tm_modalbox .description_wrap {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 50px;
+}
+
+.cavani_tm_modalbox .popup_details .top_image {
+  position: relative;
+  margin-bottom: 37px;
+  overflow: hidden;
+}
+
+.cavani_tm_modalbox .popup_details .top_image img {
+  position: relative;
+  min-width: 100%;
+  opacity: 0;
+}
+
+.cavani_tm_modalbox .popup_details .top_image .main {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cavani_tm_modalbox .popup_details .top_image .\!main {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cavani_tm_modalbox .portfolio_main_title {
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.dsdcavani_tm_modalbox .portfolio_main_title spands {
+  display: inline-block;
+}
+
+.cavani_tm_modalbox .portfolio_main_title h3 {
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.cavani_tm_modalbox .additional_images ul li {
+  width: 50%;
+}
+
+.cavani_tm_modalbox .additional_images ul li:nth-child(3n-2) {
+  width: 100%;
+}
+
+.cavani_tm_service .service_list ul li .list_inner:hover .svg {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.cavani_tm_service .service_list ul li .list_inner:hover .title {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.cavani_tm_service .service_list ul li .list_inner:hover .\!title {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.cavani_tm_service .service_list ul li .list_inner:hover .text {
+  --tw-text-opacity: 1;
+  color: rgb(170 170 170 / var(--tw-text-opacity));
+}
+
+.cavani_tm_service .service_list ul li .list_inner:hover .\!text {
+  --tw-text-opacity: 1;
+  color: rgb(170 170 170 / var(--tw-text-opacity));
+}
+
+.cavani_tm_modalbox .service_popup_informations .image {
+  position: relative;
+  float: left;
+  margin-bottom: 37px;
+  width: 100%;
+}
+
+.cavani_tm_modalbox .service_popup_informations .\!image {
+  position: relative;
+  float: left;
+  margin-bottom: 37px;
+  width: 100%;
+}
+
+.cavani_tm_modalbox .service_popup_informations .image img {
+  position: relative;
+  min-width: 100%;
+  opacity: 0;
+}
+
+.cavani_tm_modalbox .service_popup_informations .\!image img {
+  position: relative;
+  min-width: 100%;
+  opacity: 0;
+}
+
+.cavani_tm_modalbox .service_popup_informations .image .main {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cavani_tm_modalbox .service_popup_informations .\!image .main {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cavani_tm_modalbox .service_popup_informations .image .\!main {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cavani_tm_modalbox .service_popup_informations .main_title {
+  float: left;
+  margin-bottom: 23px;
+  width: 100%;
+}
+
+.cavani_tm_modalbox .service_popup_informations .main_title h3 {
+  font-size: 22px;
+}
+
+.cavani_tm_news .news_list>ul>li .list_inner .details:before {
+  position: absolute;
+  top: -17px;
+  bottom: -22px;
+  left: 0px;
+  width: 2px;
+  --tw-rotate: 8deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 184 195 / var(--tw-bg-opacity));
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.cavani_tm_news .news_list>ul>li .extra_metas ul li:before {
+  position: relative;
+  font-size: 18px;
+  --tw-content: '/';
+  content: var(--tw-content);
+}
+
+.cavani_tm_section.cavani_tm_news .news_list>ul>li .extra_metas ul li:first-child:before {
+  visibility: hidden;
+  z-index: 9;
+  opacity: 0;
+}
+
+.cavani_tm_news .news_list>ul>li .extra_metas ul li:first-child:before {
+  display: none;
+}
+
+.cavani_tm_modalbox .news_popup_informations .image {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.cavani_tm_modalbox .news_popup_informations .\!image {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.cavani_tm_modalbox .news_popup_informations .image img {
+  position: relative;
+  min-width: 100%;
+  opacity: 0;
+}
+
+.cavani_tm_modalbox .news_popup_informations .\!image img {
+  position: relative;
+  min-width: 100%;
+  opacity: 0;
+}
+
+.cavani_tm_modalbox .news_popup_informations .image .main {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cavani_tm_modalbox .news_popup_informations .\!image .main {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cavani_tm_modalbox .news_popup_informations .image .\!main {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cavani_tm_modalbox .meta {
+  float: left;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.cavani_tm_modalbox .\!meta {
+  float: left;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.cavani_tm_modalbox .meta ul {
+  margin: 0px;
+  margin-bottom: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cavani_tm_modalbox .\!meta ul {
+  margin: 0px;
+  margin-bottom: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cavani_tm_modalbox .meta ul li {
+  position: relative;
+  margin: 0px;
+  margin-right: 10px;
+}
+
+.cavani_tm_modalbox .\!meta ul li {
+  position: relative;
+  margin: 0px;
+  margin-right: 10px;
+}
+
+.cavani_tm_modalbox .meta ul li:before {
+  position: relative;
+  font-size: 18px;
+  --tw-content: '/';
+  content: var(--tw-content);
+}
+
+.cavani_tm_modalbox .\!meta ul li:before {
+  position: relative;
+  font-size: 18px;
+  --tw-content: '/';
+  content: var(--tw-content);
+}
+
+.cavani_tm_section.cavani_tm_modalbox .meta ul li:first-child:before {
+  visibility: hidden;
+  z-index: 9;
+  opacity: 0;
+}
+
+.cavani_tm_modalbox .meta ul li:first-child:before {
+  display: none;
+}
+
+.cavani_tm_section.cavani_tm_modalbox .\!meta ul li:first-child:before {
+  visibility: hidden;
+  z-index: 9;
+  opacity: 0;
+}
+
+.cavani_tm_modalbox .\!meta ul li:first-child:before {
+  display: none;
+}
+
+.cavani_tm_modalbox .meta ul li span {
+  padding-left: 10px;
+  font-size: 15px;
+  --tw-text-opacity: 1;
+  color: rgb(119 119 119 / var(--tw-text-opacity));
+}
+
+.cavani_tm_modalbox .\!meta ul li span {
+  padding-left: 10px;
+  font-size: 15px;
+  --tw-text-opacity: 1;
+  color: rgb(119 119 119 / var(--tw-text-opacity));
+}
+
+.cavani_tm_modalbox .meta ul li span a {
+  --tw-text-opacity: 1;
+  color: rgb(119 119 119 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.cavani_tm_modalbox .\!meta ul li span a {
+  --tw-text-opacity: 1;
+  color: rgb(119 119 119 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.cavani_tm_modalbox .meta ul li span a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.cavani_tm_modalbox .\!meta ul li span a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.cavani_tm_modalbox .meta ul li:first-child span {
+  padding-left: 0px;
+}
+
+.cavani_tm_modalbox .\!meta ul li:first-child span {
+  padding-left: 0px;
+}
+
+.cavani_tm_modalbox .news_popup_informations .title {
+  float: left;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.cavani_tm_modalbox .news_popup_informations .\!title {
+  float: left;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.cavani_tm_modalbox .news_popup_informations .title h3 {
+  font-size: 22px;
+}
+
+.cavani_tm_modalbox .news_popup_informations .\!title h3 {
+  font-size: 22px;
+}
+
+.cavani_tm_section.cavani_tm_contact .form .empty_notice {
+  visibility: hidden;
+  z-index: 9;
+  opacity: 0;
+}
+
+.cavani_tm_contact .form .empty_notice {
+  margin-bottom: 7px;
+  display: none;
+  text-align: left;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(245 34 37 / var(--tw-text-opacity));
+}
+
+.cavani_tm_contact .form .contact_error {
+  text-align: left;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(245 34 37 / var(--tw-text-opacity));
+}
+
+.cavani_tm_contact .form .returnmessage {
+  text-align: left;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(58 0 255 / var(--tw-text-opacity));
+}
+
+/*---------------------------------------------------*/
+
+/*	CAVANI MEDIA QUERIES (FOR SMALL DEVICES)
+    /*---------------------------------------------------*/
+
+/******  Larger  *******/
+
+@media (max-width: 1600px) {
+  body {
+    font-size: 15px;
+  }
+
+  /* .cavani_tm_header .logo .text {
+    line-height: 60px;
+  } */
+
+  /* .cavani_tm_header .logo .\!text {
+    line-height: 60px;
+  } */
+
+  /* .cavani_tm_header .logo img {
+    max-width: 95px;
+  } */
+
+  /* .cavani_tm_mainpart .author_image {
+    width: 35%;
+  } */
+
+  /* .cavani_tm_mainpart .main_content {
+    width: 65%;
+  } */
+
+  .cavani_tm_section .section_inner:before {
+    width: 50px;
+  }
+
+  .cavani_tm_title span {
+    letter-spacing: 7px;
+  }
+
+  .cavani_tm_title span:after {
+    margin-left: 25px;
+  }
+
+  .cavani_tm_header {
+    /* height: 60px; */
+    /* padding-top: 0px; */
+    /* padding-bottom: 0px; */
+    /* padding-left: 60px; */
+    /* padding-right: 60px; */
+    /* line-height: 60px; */
+  }
+
+  .cavani_tm_footer {
+    height: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+    line-height: 60px;
+  }
+
+  .cavani_tm_left_border {
+    width: 60px;
+  }
+
+  .cavani_tm_right_border {
+    width: 60px;
+  }
+
+  .cavani_tm_mainpart {
+    /* top: 60px; */
+    /* right: 60px; */
+    /* bottom: 60px; */
+    /* left: 60px; */
+  }
+
+  .cavani_tm_footer .social ul li {
+    margin-right: 10px;
+  }
+
+  .cavani_tm_header .menu ul li a {
+    /* padding-top: 0px; */
+    /* padding-bottom: 0px; */
+    /* padding-left: 22px; */
+    /* padding-right: 22px; */
+  }
+
+  .cavani_tm_home .content {
+    /* padding-left: 50px; */
+  }
+
+  .cavani_tm_home .\!content {
+    /* padding-left: 50px; */
+  }
+
+  .cavani_tm_home .name {
+    /* margin-bottom: 25px; */
+    /* font-size: 55px; */
+  }
+
+  .cavani_tm_home .\!name {
+    /* margin-bottom: 25px; */
+    /* font-size: 55px; */
+  }
+
+  .cavani_tm_home .line {
+    /* margin-bottom: 25px; */
+    /* height: 4px; */
+    /* width: 60px; */
+  }
+
+  .cavani_tm_home .\!line {
+    /* margin-bottom: 25px; */
+    /* height: 4px; */
+    /* width: 60px; */
+  }
+
+  .cavani_tm_home .job {
+    /* margin-bottom: 30px; */
+    /* font-size: 23px; */
+  }
+
+  /* .cavani_tm_button a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 32px;
+    padding-right: 32px;
+  } */
+
+  .cavani_tm_section .section_inner {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 95px;
+    padding-bottom: 0px;
+  }
+}
+
+/* .circular_progress_bar .list_inner:after {
+    @apply large:w-[100px] large:h-[100px];
+  } */
+
+/* .circular_progress_bar .title {
+    @apply large:max-w-[100px];
+  } */
+
+@media (max-width: 1600px) {
+  .cavani_tm_about .univ ul li .time span {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .cavani_tm_about .univ ul li .\!time span {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .cavani_tm_about .univ ul li .place {
+    padding-left: 0px;
+  }
+
+  .cavani_tm_portfolio .portfolio_filter ul li {
+    margin-right: 30px;
+  }
+
+  .cavani_tm_about .testimonials .list ul li .text {
+    padding: 30px;
+  }
+
+  .cavani_tm_about .testimonials .\!list ul li .text {
+    padding: 30px;
+  }
+
+  .cavani_tm_about .testimonials .list ul li .\!text {
+    padding: 30px;
+  }
+
+  .cavani_tm_contact .short_info ul li .list_inner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .cavani_tm_modalbox .box_inner {
+    top: 45px;
+    bottom: 45px;
+    width: 750px;
+  }
+
+  .cavani_tm_modalbox .description_wrap {
+    padding: 30px;
+  }
+}
+
+/******  Middle  *******/
+
+@media (max-width: 1040px) {
+  .mouse-cursor.cavani_tm_section {
+    visibility: hidden;
+    z-index: 9;
+    opacity: 0;
+  }
+
+  .mouse-cursor {
+    display: none;
+  }
+
+  #preloader.cavani_tm_section {
+    visibility: hidden;
+    z-index: 9;
+    opacity: 0;
+  }
+
+  #preloader {
+    display: none;
+  }
+
+  .cavani_tm_footer.cavani_tm_section {
+    visibility: hidden;
+    z-index: 9;
+    opacity: 0;
+  }
+
+  .cavani_tm_footer {
+    display: none;
+  }
+
+  .cavani_tm_left_border.cavani_tm_section {
+    visibility: hidden;
+    z-index: 9;
+    opacity: 0;
+  }
+
+  .cavani_tm_left_border {
+    display: none;
+  }
+
+  .cavani_tm_right_border.cavani_tm_section {
+    visibility: hidden;
+    z-index: 9;
+    opacity: 0;
+  }
+
+  .cavani_tm_right_border {
+    display: none;
+  }
+
+  .cavani_tm_section .section_inner:before {
+    width: 20px;
+  }
+
+  /* .cavani_tm_mainpart .author_image.cavani_tm_section {
+    visibility: hidden;
+    z-index: 9;
+    opacity: 0;
+  } */
+
+  /* .cavani_tm_mainpart .author_image {
+    display: none;
+  } */
+
+  .cavani_tm_mainpart .main_content {
+    width: 100%;
+  }
+
+  .cavani_tm_home .content {
+    /* padding-top: 0px; */
+    /* padding-bottom: 0px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+  }
+
+  .cavani_tm_home .\!content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .cavani_tm_home .name {
+    /* font-size: 60px; */
+  }
+
+  .cavani_tm_home .\!name {
+    /* font-size: 60px; */
+  }
+
+  .cavani_tm_home .job {
+    font-size: 22px;
+  }
+
+  .cavani_tm_about .biography .wrapper {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .cavani_tm_about .biography .\!wrapper {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .cavani_tm_about .biography .left {
+    margin-bottom: 55px;
+    width: 100%;
+  }
+
+  .cavani_tm_about .biography .\!left {
+    margin-bottom: 55px;
+    width: 100%;
+  }
+
+  .cavani_tm_about .biography .right {
+    width: 100%;
+  }
+
+  .cavani_tm_about .biography .\!right {
+    width: 100%;
+  }
+
+  .cavani_tm_about .services .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cavani_tm_about .services .\!wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cavani_tm_about .services .service_list {
+    margin-bottom: 55px;
+    width: 100%;
+  }
+
+  .cavani_tm_about .services .service_list:nth-child(2) {
+    width: 100%;
+  }
+
+  .cavani_tm_about .services .interests {
+    width: 100%;
+  }
+
+  .cavani_tm_section .section_inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 57px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 1390px) {
+  .cavani_tm_about .skills .wrapper {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .cavani_tm_about .skills .\!wrapper {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .cavani_tm_about .skills .programming {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  .cavani_tm_about .skills .language {
+    width: 100%;
+  }
+
+  .cavani_tm_about .skills .\!language {
+    width: 100%;
+  }
+
+  .circular_progress_bar .title {
+    float: none;
+  }
+
+  .circular_progress_bar .\!title {
+    float: none;
+  }
+
+  .cavani_tm_about .resume .wrapper {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .cavani_tm_about .\!resume .wrapper {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .cavani_tm_about .resume .\!wrapper {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 1040px) {
+  .cavani_tm_about .resume .education {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  .cavani_tm_about .\!resume .education {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  .cavani_tm_about .resume .experience {
+    width: 100%;
+  }
+
+  .cavani_tm_about .\!resume .experience {
+    width: 100%;
+  }
+
+  .cavani_tm_portfolio .portfolio_list ul li {
+    width: 50%;
+  }
+
+  .cavani_tm_contact .short_info ul {
+    margin: 0px;
+  }
+
+  .cavani_tm_contact .short_info ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .cavani_tm_contact .form {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .cavani_tm_contact .form .left {
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .cavani_tm_contact .form .\!left {
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .cavani_tm_contact .form .right {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .cavani_tm_contact .form .\!right {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .cavani_tm_modalbox .box_inner {
+    width: 550px;
+  }
+
+  .cavani_tm_modalbox .description_wrap {
+    padding: 20px;
+  }
+
+  .cavani_tm_modalbox .main_details {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .cavani_tm_modalbox .main_details .textbox {
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .cavani_tm_modalbox .main_details .detailbox {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .cavani_tm_modalbox .additional_images ul {
+    margin: 0px;
+  }
+
+  .cavani_tm_modalbox .additional_images ul li {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .cavani_tm_modalbox .portfolio_main_title h3 {
+    font-size: 20px;
+  }
+
+  .cavani_tm_modalbox .news_popup_informations .title h3 {
+    font-size: 20px;
+  }
+
+  .cavani_tm_modalbox .news_popup_informations .\!title h3 {
+    font-size: 20px;
+  }
+
+  .cavani_tm_modalbox .service_popup_informations .main_title h3 {
+    font-size: 20px;
+  }
+}
+
+/******  Small  *******/
+
+@media (max-width: 768px) {
+  .cavani_tm_home .name {
+    /* font-size: 40px; */
+  }
+
+  .cavani_tm_home .\!name {
+    /* font-size: 40px; */
+  }
+
+  .cavani_tm_home .job {
+    font-size: 20px;
+  }
+
+  .cavani_tm_home .line {
+    height: 3px;
+    width: 40px;
+  }
+
+  .cavani_tm_home .\!line {
+    height: 3px;
+    width: 40px;
+  }
+
+  /* .cavani_tm_button a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
+  } */
+}
+
+/* .circular_progress_bar .list_inner:after {
+    @apply small:w-[80px] small:h-[80px];
+  } */
+
+@media (max-width: 768px) {
+  .circular_progress_bar .title {
+    max-width: 80px;
+  }
+
+  .circular_progress_bar .\!title {
+    max-width: 80px;
+  }
+
+  .cavani_tm_about .partners .list ul li {
+    width: 50%;
+  }
+
+  .cavani_tm_about .partners .\!list ul li {
+    width: 50%;
+  }
+
+  .cavani_tm_portfolio .portfolio_list ul {
+    margin: 0px;
+  }
+
+  .cavani_tm_portfolio .portfolio_list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .cavani_tm_title span {
+    letter-spacing: 4px;
+  }
+
+  .cavani_tm_title span:after {
+    margin-left: 15px;
+  }
+
+  .cavani_tm_modalbox .box_inner {
+    top: 60px;
+    bottom: 40px;
+    width: 300px;
+  }
+
+  .cavani_tm_modalbox .close {
+    top: -37px;
+    margin-left: -25px;
+  }
+
+  .cavani_tm_modalbox .close a {
+    height: 28px;
+    width: 28px;
+  }
+
+  .cavani_tm_service .service_list ul {
+    margin: 0px;
+  }
+
+  .cavani_tm_service .service_list ul li {
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .cavani_tm_service .service_list ul li .title {
+    font-size: 20px;
+  }
+
+  .cavani_tm_service .service_list ul li .\!title {
+    font-size: 20px;
+  }
+
+  .cavani_tm_news .news_list>ul>li .post_title h3 a {
+    font-size: 20px;
+  }
+
+  .cavani_tm_news .news_list>ul>li .list_inner .number.cavani_tm_section {
+    visibility: hidden;
+    z-index: 9;
+    opacity: 0;
+  }
+
+  .cavani_tm_news .news_list>ul>li .list_inner .number {
+    display: none;
+  }
+
+  .cavani_tm_news .news_list>ul>li .list_inner .\!number.cavani_tm_section {
+    visibility: hidden;
+    z-index: 9;
+    opacity: 0;
+  }
+
+  .cavani_tm_news .news_list>ul>li .list_inner .\!number {
+    display: none;
+  }
+
+  .cavani_tm_news .news_list>ul>li .list_inner .details:before.cavani_tm_section {
+    visibility: hidden;
+    z-index: 9;
+    opacity: 0;
+  }
+
+  .cavani_tm_news .news_list>ul>li .list_inner .details:before {
+    display: none;
+  }
+
+  .cavani_tm_news .news_list>ul>li .list_inner .details {
+    margin: 0px;
+    max-width: 100%;
+    padding: 0px;
+  }
+
+  .cavani_tm_news .news_list>ul>li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

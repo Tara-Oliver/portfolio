@@ -1,0 +1,141 @@
+::-webkit-scrollbar {
+  width: 20px;
+  /* margin-left: 5px; */
+
+}
+
+::-webkit-scrollbar-track {
+  background: #fef7f2;
+  margin: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #484848;
+  border-radius: 12px;
+  border: 3px solid #fef7f2;
+}
+
+/* For Firefox */
+@supports (scrollbar-color: #484848 #fef7f2) {
+  html {
+    scrollbar-color: #484848 #fef7f2;
+    scrollbar-width: thin;
+  }
+}
+
+
+.dropping-texts {
+  display: inline-block;
+  /* width: 180px; */
+  text-align: left;
+  /* height: 36px; */
+  /* vertical-align: -2px; */
+}
+
+.dropping-texts>div {
+  /* font-size: 0px; */
+  opacity: 0;
+  /* margin-left: 0px; */
+  /* position: absolute; */
+  /* font-weight: 300; */
+  /* box-shadow: 0px 60px 25px -20px rgba(0, 0, 0, 0.5); */
+}
+
+.dropping-texts>div:nth-child(1) {
+  animation: roll 9s linear infinite 0s;
+}
+
+.dropping-texts>div:nth-child(2) {
+  animation: roll 9s linear infinite 2.5s;
+}
+
+.dropping-texts>div:nth-child(3) {
+  animation: roll 9s linear infinite 5s;
+}
+
+.dropping-texts>div:nth-child(4) {
+  animation: roll 9s linear infinite 7s;
+}
+
+.sect-con {
+  animation: fadeInDown 1s linear 0s;
+}
+
+@keyframes roll {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    /* transform: rotate(-25deg); */
+  }
+
+  3% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  5% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  20% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+    transform: rotate(0deg);
+  }
+
+  27% {
+    font-size: 0px;
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-top: 100px;
+  }
+
+  100% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    /* transform: rotate(15deg); */
+  }
+}
+
+
+
+
+
+
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
