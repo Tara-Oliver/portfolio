@@ -3,25 +3,33 @@ import PageWrapper from "../shared-components/PageWrapper";
 // import "./main.css";
 import { Link } from "react-router-dom";
 import "../../animate.css";
-const Home = () => {
+const Home = ({ mobileMenuOpen }) => {
+	console.log(mobileMenuOpen);
+
 	return (
-		<div className="flex flex-col justify-center h-full md:pl-14 sect-con  items-center md:items-start">
-			<h3 className="text-4xl md:text-6xl font-bold mb-6 font-news ">
+		<div className="flex flex-col justify-center h-full md:pl-14 sect-con items-center md:items-start">
+			<h3 className="text-4xl md:text-6xl font-bold mb-6 font-news">
 				Tara Oliver
 			</h3>
-			<div className="mb-10 w-[45%] bg-dkgrey h-1 rounded-full"></div>
+			<div className="mb-10 w-20 bg-dkgrey h-1 rounded-full"></div>
 
 			<div className="flex w-full md:w-auto justify-center md:justify-start">
-				<div className="dropping-texts md:text-2xl text-xl capitalize font-medium  w-full h-9">
-					<div className="absolute text-center border border-rose-950">
-						Proactive Problem Solver
+				{!mobileMenuOpen && (
+					<div className="dropping-texts md:text-2xl text-xl capitalize font-medium  w-full h-9">
+						<div className="absolute text-center md:w-auto w-full">
+							Proactive Problem Solver
+						</div>
+						<div className="absolute  text-center md:w-auto w-full">
+							Detail-oriented Professional
+						</div>
+						<div className="absolute  text-center md:w-auto w-full">
+							Collaborative Team Player
+						</div>
+						<div className="absolute  text-center md:w-auto w-full">
+							Analytical Thinker
+						</div>
 					</div>
-					<div className="absolute  text-center">
-						Detail-oriented Professional
-					</div>
-					<div className="absolute  text-center">Collaborative Team Player</div>
-					<div className="absolute  text-center">Analytical Thinker</div>
-				</div>
+				)}
 			</div>
 
 			<div className="my-8">

@@ -1,73 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { projects, clientWork } from "../shared-components/util";
+import ProjectItem from "./ProjectItem";
 
 const Portfolio = () => {
 	return (
-		<div className="flex flex-col  h-full px-14 py-20 sect-con">
+		<div className="flex flex-col h-full px-4 md:px-14 py-20 sect-con">
 			<div className="leading-relaxed">
-				<h3 className="text-xl md:text-3xl font-bold mb-4 font-news text-dkgrey">
+				<h3 className="text-3xl font-bold mb-4 font-news text-dkgrey">
 					Client Work
 				</h3>
-				<div className="mb-10 w-[20%] bg-dkgrey h-1 rounded-full"></div>
+				<div className="mb-10 w-20 bg-dkgrey h-1 rounded-full"></div>
 				<ul className="flex flex-wrap">
-					<li>
-						<video loop autoPlay muted>
-							<source
-								src="	https://res.cloudinary.com/dzgmrgcuo/video/upload/v1738262944/LanisAutoDetailing-Profile1-MicrosoftEdge2025-01-3013-37-17-ezgif.com-crop-video_oligzf.mp4"
-								type="video/mp4"
-							/>
-						</video>
-						<Link
-							to="https://www.lanisdetailing.com/"
-							className="hover:font-bold hover:underline hover:underline-offset-2">
-							Lani's Detailing - Work in Progress
-						</Link>
-						<p>
-							Classic interactive coloring demo built with Vanilla JS and DOM
-							manipulation
-						</p>
-					</li>
-					<li>
-						<video loop autoPlay muted>
-							<source
-								src="	https://res.cloudinary.com/dzgmrgcuo/video/upload/v1738186211/Family_Life_Insurance_-_Google_Chrome_2025-01-29_16-27-15_online-video-cutter.com_j7ccrn.mp4"
-								type="video/mp4"
-							/>
-						</video>
-						<Link
-							to="https://gb-ail.vercel.app/"
-							className="hover:font-bold hover:underline hover:underline-offset-2">
-							Gwen Black for Global Life
-						</Link>
-					</li>
+					{clientWork.map((project, idx) => (
+						<ProjectItem key={idx} project={project} />
+					))}
 				</ul>
 			</div>
 			<div className="py-20">
-				<h3 className="text-xl md:text-3xl font-bold mb-4 font-news text-dkgrey">
+				<h3 className="text-3xl font-bold mb-4 font-news text-dkgrey">
 					Personal Projects
 				</h3>
-				<div className="mb-10 w-[20%] bg-dkgrey h-1 rounded-full"></div>
+				<div className="mb-10 w-20 bg-dkgrey h-1 rounded-full"></div>
 				<ul className="flex flex-wrap">
-					<li>
-						<video loop autoPlay muted>
-							<source
-								src="https://res.cloudinary.com/dzgmrgcuo/video/upload/v1738184868/YOU-nique_Designs_-_Profile_1_-_Microsoft__Edge_2025-01-29_15-37-10_1_online-video-cutter.com_j81baz.mp4"
-								type="video/mp4"
-							/>
-						</video>
-						<Link
-							to="https://tara-oliver.github.io/YOU-NIQUE-DESIGNS/"
-							className="hover:font-bold hover:underline hover:underline-offset-2 text-xl">
-							You-nique Designs
-						</Link>
-						<p>
-							Classic interactive coloring demo built with Vanilla JS and DOM
-							manipulation
-						</p>
-						<Link to="https://github.com/Tara-Oliver/YOU-NIQUE-DESIGNS">
-							GitHub
-						</Link>
-					</li>
+					{projects.map((project, idx) => (
+						<ProjectItem key={idx} project={project} />
+					))}
 				</ul>
 			</div>
 

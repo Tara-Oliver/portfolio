@@ -55,3 +55,44 @@ export const skills = [
 	{ icon: <i className="devicon-figma-plain"></i>, name: "Figma" },
 	{ icon: <i className="devicon-canva-original"></i>, name: "Canva" },
 ];
+
+export const projects = [
+	{
+		videoSrc:
+			"https://res.cloudinary.com/dzgmrgcuo/video/upload/v1738184868/YOU-nique_Designs_-_Profile_1_-_Microsoft__Edge_2025-01-29_15-37-10_1_online-video-cutter.com_j81baz.mp4",
+		liveLink: "https://tara-oliver.github.io/YOU-NIQUE-DESIGNS/",
+		name: "You-nique Designs",
+		desc: "An interactive classic coloring demo built with Vanilla JS and DOM manipulation, allowing users to dynamically color elements with a smooth and engaging experience",
+		gitLink: "https://github.com/Tara-Oliver/YOU-NIQUE-DESIGNS",
+	},
+	// {
+	// 	videoSrc: "",
+	// 	liveLink: "",
+	// 	name: "",
+	// 	desc: "",
+	// 	gitLink:"",
+	// },
+];
+
+export const clientWork = [
+	{
+		videoSrc:
+			"https://res.cloudinary.com/dzgmrgcuo/video/upload/v1738262944/LanisAutoDetailing-Profile1-MicrosoftEdge2025-01-3013-37-17-ezgif.com-crop-video_oligzf.mp4",
+		liveLink: "https://www.lanisdetailing.com/",
+		name: "Lani's Detailing - Work in Progress",
+		desc: "Auto detailing website featuring a dynamic React frontend with CSS animations designed to showcase services and streamline customer engagement",
+	},
+	{
+		videoSrc:
+			"https://res.cloudinary.com/dzgmrgcuo/video/upload/v1738186211/Family_Life_Insurance_-_Google_Chrome_2025-01-29_16-27-15_online-video-cutter.com_j7ccrn.mp4",
+		liveLink: "https://gb-ail.vercel.app/",
+		name: "Gwen Black for Global Life Insurance",
+		desc: "A professional and responsive website for an insurance broker, built with React and Tailwind CSS, designed to help clients explore coverage options effortlessly",
+	},
+	// {
+	// 	videoSrc: "",
+	// 	liveLink: "",
+	// 	name: "",
+	// 	desc: "",
+	// },
+];
