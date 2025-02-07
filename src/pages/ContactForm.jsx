@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
 	const [formData, setFormData] = useState({
@@ -53,7 +52,6 @@ const ContactForm = () => {
 		<section
 			className="p-8 text-center w-full mb-4 mr-8 font-inter bg-[rgba(0,0,0,.05)] rounded-2xl"
 			id="contactForm">
-			{/* <h2 className="text-2xl font-bold mb-4 tracking-tight">Get in Touch</h2> */}
 			<form
 				className="text-dkblue max-w-xl mx-auto space-y-4 "
 				onSubmit={handleSubmit}>

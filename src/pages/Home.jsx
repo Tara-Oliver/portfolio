@@ -1,11 +1,7 @@
 import React from "react";
-import PageWrapper from "../shared-components/PageWrapper";
-// import "./main.css";
 import { Link } from "react-router-dom";
 import "../../animate.css";
 const Home = ({ mobileMenuOpen }) => {
-	console.log(mobileMenuOpen);
-
 	return (
 		<div className="flex flex-col justify-center h-full md:pl-14 sect-con items-center md:items-start">
 			<h3 className="text-4xl md:text-6xl font-bold mb-6 font-news">

@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import { navbarLinks } from "./util";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
-// import { RemoveScroll } from "react-remove-scroll";
 
 const MobileMenuModal = ({ isOpen, handleClose }) => {
 	const backgroundRef = useRef();
@@ -17,7 +16,6 @@ const MobileMenuModal = ({ isOpen, handleClose }) => {
 			onClick={(e) => {
 				if (e.target === backgroundRef.current) {
 					handleClose();
-					// console.log("modalClosed");
 				}
 			}}
 			className="fixed top-28 right-0 w-full h-[72%] font-lato z-20 bg-sec p-4">

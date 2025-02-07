@@ -3,11 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { navbarLinks } from "./util";
 import clsx from "clsx";
 import MobileMenuModal from "./MobileMenuModal";
-// import { Link } from "react-router-dom";
-MobileMenuModal;
 
 const Navbar = ({ setActiveSection, mobileMenuOpen, setMobileMenuOpen }) => {
-	// const location = useLocation();
 	const { pathname } = useLocation();
 
 	return (

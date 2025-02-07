@@ -1,6 +1,6 @@
 import React from "react";
 import { skills } from "../shared-components/util";
-import { motion } from "framer-motion";
+
 
 const About = () => {
 	return (

@@ -1,17 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-// import Footer from "./shared-components/Footer";
 import Navbar from "./shared-components/Navbar";
 import { BrowserRouter } from "react-router-dom";
-
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
-// import Service from "./pages/Service";
 import Contact from "./pages/Contact";
 
 const App = () => {
-	// const location = useLocation();
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 	const [activeSection, setActiveSection] = useState("home");
 
@@ -32,13 +28,12 @@ const App = () => {
 
 	useEffect(() => {
 		const newStr = location.pathname.replace(/\//g, "");
-		// console.log(newStr);
+
 		setActiveSection(newStr);
 	}, []);
-	// console.log(mobileMenuOpen);
+
 	return (
 		<BrowserRouter basename="/">
-			{/* <ScrollToTop> */}
 			<div className="h-screen w-screen flex flex-col font-inter text-dkgrey">
 				<Navbar
 					setActiveSection={setActiveSection}
@@ -60,7 +55,6 @@ const App = () => {
 					</div>
 					<div className="flex w-full md:w-3/5 h-full">
 						<div className="content flex-1 bg-sec overflow-auto max-h-full text-wrap z-0">
-							{/* <Home mobileMenuOpen={mobileMenuOpen} /> */}
 							{renderContent()}
 						</div>
 						<div className="right_col bg-mainBg w-16 md:block hidden"></div>
@@ -77,7 +71,6 @@ const App = () => {
 					</Link>
 				</div>
 			</div>
-			{/* </ScrollToTop> */}
 		</BrowserRouter>
 	);
 };
