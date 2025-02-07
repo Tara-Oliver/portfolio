@@ -52,7 +52,7 @@ const App = () => {
 						<div className="left_col bg-mainBg w-16"></div>
 						<div className="img flex-1">
 							<img
-								src="/src/assets/AI_avi.png"
+								src="https://res.cloudinary.com/dzgmrgcuo/image/upload/v1738956878/AI_avi_icfhyq.webp"
 								alt="Image Description"
 								className="object-cover object-center h-full w-full"
 							/>

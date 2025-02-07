@@ -16,7 +16,7 @@ const Navbar = ({ setActiveSection, mobileMenuOpen, setMobileMenuOpen }) => {
 				{" "}
 				<img
 					className="max-w-[95px] md:max-w-[110px] max-h-[50px]"
-					src="/src/assets/initial_logo.png"
+					src="https://res.cloudinary.com/dzgmrgcuo/image/upload/v1738956864/initial_logo_zyy6ud.png"
 					alt="image"
 				/>
 			</div>
