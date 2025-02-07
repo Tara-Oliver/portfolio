@@ -28,7 +28,7 @@ const MobileMenuModal = ({ isOpen, handleClose }) => {
 					className="w-1/2 flex justify-center items-center mb-4"
 					data-img-url="assets/img/about/1.jpg">
 					<img
-						src="https://res.cloudinary.com/dzgmrgcuo/image/upload/v1738956878/AI_avi_icfhyq.webp"
+						src="https://res.cloudinary.com/dzgmrgcuo/image/upload/v1738964699/avi_mrqhbh.png"
 						alt=""
 					/>
 				</div>
