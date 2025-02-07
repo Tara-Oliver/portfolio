@@ -79,7 +79,7 @@ const ContactForm = () => {
 				<textarea
 					required
 					name="message"
-					className="w-full p-3 bg-transparent focus:outline-none  placeholder:text-[#a09389]"
+					className="w-full p-3 bg-transparent focus:outline-none  placeholder:text-[#a09389] focus:placeholder:text-dkgrey"
 					rows="5"
 					placeholder="Message"
 					value={formData.message}

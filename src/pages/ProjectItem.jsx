@@ -8,7 +8,7 @@ const ProjectItem = ({ project }) => {
 				<source src={project.videoSrc} type="video/mp4" />
 			</video>
 			<div className="my-4">
-				<span className="font-bold  text-2xl font-news">{project.name}</span>
+				<span className="font-bold  text-xl font-news">{project.name}</span>
 				<p className="italic">{project.desc}</p>
 				<div className=" my-4 flex gap-x-4">
 					<Link
