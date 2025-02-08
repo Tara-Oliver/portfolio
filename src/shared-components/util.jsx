@@ -62,9 +62,10 @@ export const projects = [
 			"https://res.cloudinary.com/dzgmrgcuo/image/upload/v1738987144/WellSaidArtwork-GoogleChrome2025-02-0713-56-47online-video-cutter.com-ezgif.com-video-to-gif-converter_ta1ged.gif",
 		liveLink: "https://well-said-five.vercel.app/",
 		name: "Well Said Artwork",
-		desc: "This e-commerce project is designed for a seamless end-to end shopping experience showcasing a curated collection of framed artwork.",
+		desc: "This e-commerce project is designed for a seamless end-to end shopping experience showcasing a curated collection of framed artwork. I designed all the featured artwork and the brand logo, ensuring a cohesive and visually striking collection.",
 		gitLink: "https://github.com/Tara-Oliver/WellSaid",
 	},
+
 	{
 		videoSrc:
 			"https://res.cloudinary.com/dzgmrgcuo/image/upload/v1738990159/YOU-niqueDesigns-Profile1-Microsoft_Edge2025-01-2915-37-101online-video-cutter.com-ezgif.com-video-to-gif-converter_rgjtzn.gif",
