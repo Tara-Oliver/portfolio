@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../animate.css";
-const Home = ({ mobileMenuOpen }) => {
+const Home = ({ mobileMenuOpen, setActiveSection }) => {
 	return (
 		<div className="flex flex-col justify-center h-full md:pl-14 sect-con items-center md:items-start">
 			<h3 className="text-4xl md:text-6xl font-bold mb-6 font-news">
@@ -30,6 +30,7 @@ const Home = ({ mobileMenuOpen }) => {
 
 			<div className="my-8">
 				<Link
+					onClick={() => setActiveSection("contact")}
 					to="/contact"
 					className="font-semibold px-8 bg-dkgrey py-3 text-mainBg transition-all ease-in-out duration-300  border-2 border-dkgrey hover:bg-sec rounded-full hover:text-dkgrey">
 					Get in Touch

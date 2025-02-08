@@ -16,7 +16,12 @@ const App = () => {
 			case "about":
 				return <About mobileMenuOpen={mobileMenuOpen} />;
 			case "home":
-				return <Home mobileMenuOpen={mobileMenuOpen} />;
+				return (
+					<Home
+						mobileMenuOpen={mobileMenuOpen}
+						setActiveSection={setActiveSection}
+					/>
+				);
 			case "contact":
 				return <Contact />;
 			case "portfolio":
