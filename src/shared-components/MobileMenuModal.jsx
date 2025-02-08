@@ -18,7 +18,7 @@ const MobileMenuModal = ({ isOpen, handleClose }) => {
 					handleClose();
 				}
 			}}
-			className="fixed top-28 right-0 w-full h-[72%] font-lato z-20 bg-sec p-4">
+			className="fixed top-28 right-0 w-full h-full font-lato z-20 bg-sec p-4">
 			<motion.div
 				initial={{ translateX: "100%" }}
 				animate={{ translateX: 0 }}
@@ -32,24 +32,22 @@ const MobileMenuModal = ({ isOpen, handleClose }) => {
 						alt=""
 					/>
 				</div>
-				<ul className="font-medium w-full">
+				<ul className="font-medium w-full flex flex-col">
 					{navbarLinks.map((navbarLink, idx) => (
-						<li
+						<Link
 							key={idx}
 							className={clsx(
 								"font-medium  transition-all duration-300 hover:text-mainBg hover:bg-dkgrey w-full text-center my-4 px-6 py-2",
 								location.pathname === navbarLink.route &&
 									"bg-dkgrey text-mainBg"
-							)}>
-							<Link
-								onClick={() => {
-									setActiveSection(navbarLink.name);
-									handleClose();
-								}}
-								to={navbarLink.route}>
-								{navbarLink.name}
-							</Link>
-						</li>
+							)}
+							onClick={() => {
+								setActiveSection(navbarLink.name);
+								handleClose();
+							}}
+							to={navbarLink.route}>
+							{navbarLink.name}
+						</Link>
 					))}
 				</ul>
 			</motion.div>
