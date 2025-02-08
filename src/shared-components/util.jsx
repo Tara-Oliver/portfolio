@@ -59,7 +59,7 @@ export const skills = [
 export const projects = [
 	{
 		videoSrc:
-			"https://res.cloudinary.com/dzgmrgcuo/video/upload/v1738955333/Well_Said_Artwork_-_Google_Chrome_2025-02-07_13-56-47_online-video-cutter.com_xhixvj.mp4",
+			"https://res.cloudinary.com/dzgmrgcuo/image/upload/v1738987144/WellSaidArtwork-GoogleChrome2025-02-0713-56-47online-video-cutter.com-ezgif.com-video-to-gif-converter_ta1ged.gif",
 		liveLink: "https://well-said-five.vercel.app/",
 		name: "Well Said Artwork",
 		desc: "This e-commerce project is designed for a seamless end-to end shopping experience showcasing a curated collection of framed artwork.",
@@ -67,7 +67,7 @@ export const projects = [
 	},
 	{
 		videoSrc:
-			"https://res.cloudinary.com/dzgmrgcuo/video/upload/v1738184868/YOU-nique_Designs_-_Profile_1_-_Microsoft__Edge_2025-01-29_15-37-10_1_online-video-cutter.com_j81baz.mp4",
+			"https://res.cloudinary.com/dzgmrgcuo/image/upload/v1738990159/YOU-niqueDesigns-Profile1-Microsoft_Edge2025-01-2915-37-101online-video-cutter.com-ezgif.com-video-to-gif-converter_rgjtzn.gif",
 		liveLink: "https://tara-oliver.github.io/YOU-NIQUE-DESIGNS/",
 		name: "You-nique Designs",
 		desc: "An interactive classic coloring demo built with Vanilla JS and DOM manipulation, allowing users to dynamically color elements with a smooth and engaging experience.",
@@ -78,14 +78,14 @@ export const projects = [
 export const clientWork = [
 	{
 		videoSrc:
-			"https://res.cloudinary.com/dzgmrgcuo/video/upload/v1738262944/LanisAutoDetailing-Profile1-MicrosoftEdge2025-01-3013-37-17-ezgif.com-crop-video_oligzf.mp4",
+			"https://res.cloudinary.com/dzgmrgcuo/image/upload/v1738990315/LanisAutoDetailing-Profile1-MicrosoftEdge2025-01-3013-37-17-ezgif.com-video-to-gif-converter_lijlwx.gif",
 		liveLink: "https://www.lanisdetailing.com/",
 		name: "Lani's Detailing - Work in Progress",
 		desc: "Auto detailing website featuring a dynamic React frontend with CSS animations designed to showcase services and streamline customer engagement.",
 	},
 	{
 		videoSrc:
-			"https://res.cloudinary.com/dzgmrgcuo/video/upload/v1738186211/Family_Life_Insurance_-_Google_Chrome_2025-01-29_16-27-15_online-video-cutter.com_j7ccrn.mp4",
+			"https://res.cloudinary.com/dzgmrgcuo/image/upload/v1738990419/FamilyLifeInsurance-GoogleChrome2025-01-2916-27-15online-video-cutter.com-ezgif.com-video-to-gif-converter_xnzdd1.gif",
 		liveLink: "https://gb-ail.vercel.app/",
 		name: "Gwen Black for Global Life Insurance",
 		desc: "A professional and responsive website for an insurance broker, built with React and Tailwind CSS, designed to help clients explore coverage options effortlessly.",

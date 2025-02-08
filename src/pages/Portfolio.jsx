@@ -26,10 +26,7 @@ const Portfolio = () => {
 						<ProjectItem key={idx} project={project} />
 					))}
 				</ul>
-				<img
-					src="https://res.cloudinary.com/dzgmrgcuo/image/upload/v1738987144/WellSaidArtwork-GoogleChrome2025-02-0713-56-47online-video-cutter.com-ezgif.com-video-to-gif-converter_ta1ged.gif"
-					alt=""
-				/>
+
 			</div>
 		</div>
 	);

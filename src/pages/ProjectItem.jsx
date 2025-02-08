@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 const ProjectItem = ({ project }) => {
 	return (
 		<li className="my-6">
-			<video loop autoPlay muted>
-				<source src={project.videoSrc} type="video/mp4" />
-			</video>
+			<img src={project.videoSrc} alt="" />
 			<div className="my-4">
 				<span className="font-bold  text-xl font-news">{project.name}</span>
 				<p className="italic">{project.desc}</p>

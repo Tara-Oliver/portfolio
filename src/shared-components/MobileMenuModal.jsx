@@ -39,7 +39,7 @@ const MobileMenuModal = ({ isOpen, handleClose }) => {
 							<Link
 								key={idx}
 								className={clsx(
-									"font-medium  hover:text-mainBg hover:bg-dkgrey w-full text-center my-2 px-6 py-2",
+									"font-medium  hover:text-mainBg hover:bg-dkgrey w-full text-center my-1 px-6 py-2",
 									location.pathname === navbarLink.route &&
 										"bg-dkgrey text-mainBg"
 								)}
@@ -52,7 +52,7 @@ const MobileMenuModal = ({ isOpen, handleClose }) => {
 							</Link>
 						))}
 					</ul>
-					<div className="footer min-h-[10%] flex  items-center justify-center py-6 md:py-0 md:px-16 px-4 text-center text-2xl">
+					<div className="footer min-h-[10%] flex  items-center justify-center   px-4 text-center text-3xl">
 						<Link to="https://www.linkedin.com/in/tara-oliver">
 							<i className="fa-brands fa-linkedin mr-6"></i>
 						</Link>
