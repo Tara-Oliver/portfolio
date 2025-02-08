@@ -52,7 +52,7 @@ const MobileMenuModal = ({ isOpen, handleClose }) => {
 							</Link>
 						))}
 					</ul>
-					<div className="footer min-h-[10%] flex  items-center justify-center   px-4 text-center text-3xl">
+					<div className="footer min-h-[10%] flex items-center justify-center   px-4 text-center text-4xl">
 						<Link to="https://www.linkedin.com/in/tara-oliver">
 							<i className="fa-brands fa-linkedin mr-6"></i>
 						</Link>
