@@ -61,7 +61,7 @@ const App = () => {
 					</div>
 				</div>
 
-				<div className="footer min-h-[10%] flex items-center justify-center py-6 md:py-0 md:px-16 px-4 bg-mainBg text-center text-2xl">
+				<div className="footer min-h-[10%] md:flex hidden items-center justify-center py-6 md:py-0 md:px-16 px-4 bg-mainBg text-center text-2xl">
 					<Link to="https://www.linkedin.com/in/tara-oliver">
 						<i className="fa-brands fa-linkedin mr-3"></i>
 					</Link>

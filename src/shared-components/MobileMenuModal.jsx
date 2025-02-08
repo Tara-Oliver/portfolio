@@ -52,6 +52,15 @@ const MobileMenuModal = ({ isOpen, handleClose }) => {
 							</Link>
 						))}
 					</ul>
+					<div className="footer min-h-[10%] flex  items-center justify-center py-6 md:py-0 md:px-16 px-4 text-center text-2xl">
+						<Link to="https://www.linkedin.com/in/tara-oliver">
+							<i className="fa-brands fa-linkedin mr-6"></i>
+						</Link>
+						<Link to="https://github.com/Tara-Oliver/">
+							{" "}
+							<i className="fa-brands fa-github"></i>
+						</Link>
+					</div>
 				</motion.div>{" "}
 			</div>
 		</RemoveScroll>
