@@ -1,3 +1,27 @@
+import {
+	SiHtml5,
+	SiCss3,
+	SiJavascript,
+	SiTypescript,
+	SiNodedotjs,
+	SiAxios,
+	SiExpress,
+	SiRuby,
+	SiRubyonrails,
+	SiPython,
+	SiReact,
+	SiTailwindcss,
+	SiMongodb,
+	SiPostgresql,
+	SiPostman,
+	SiGit,
+	SiGithub,
+	SiAdobeindesign,
+	SiInkscape,
+	SiFigma,
+	SiCanva,
+} from "react-icons/si";
+
 export const navbarLinks = [
 	{ name: "home", route: "/" },
 	{ name: "about", route: "/about" },
@@ -5,55 +29,79 @@ export const navbarLinks = [
 	{ name: "contact", route: "/contact" },
 ];
 
-export const skills = [
-	{ name: "HTML", icon: <i className="devicon-html5-plain"></i> },
-	{ name: "CSS", icon: <i className="devicon-css3-plain"></i> },
-	{ name: "JavaScript", icon: <i className="devicon-javascript-plain"></i> },
-	{
-		icon: <i className="devicon-typescript-plain"></i>,
-		name: "TypeScript",
-	},
-	{ icon: <i className="devicon-nodejs-plain"></i>, name: "Node.js" },
-	{ icon: <i className="devicon-axios-plain"></i>, name: "Axios" },
-	{
-		icon: <i className="devicon-express-original"></i>,
-		name: "Express.js",
-	},
-	{
-		icon: <i className="devicon-ruby-plain"></i>,
-		name: "Ruby",
-	},
-	{
-		icon: <i className="devicon-rails-plain"></i>,
-		name: "Ruby on Rails",
-	},
-	{ icon: <i className="devicon-python-plain"></i>, name: "Python" },
-	{
-		icon: <i className="devicon-react-original"></i>,
-		name: "ReactJS",
-	},
-	{
-		icon: <i className="devicon-tailwindcss-original"></i>,
-		name: "Tailwind CSS",
-	},
-	{
-		icon: <i className="devicon-mongodb-plain"></i>,
-		name: "MongoDB",
-	},
-	{
-		icon: <i className="devicon-postgresql-plain"></i>,
-		name: "PostgreSQL",
-	},
-	{
-		icon: <i className="devicon-postman-plain"></i>,
-		name: "Postman",
-	},
-	{ icon: <i className="devicon-git-plain"></i>, name: "Git" },
-	{ icon: <i className="devicon-github-original"></i>, name: "GitHub" },
-	{ icon: <i className="devicon-inkscape-plain"></i>, name: "Inkscape" },
+// export const skills = [
+// 	{ name: "HTML", icon: <i className="devicon-html5-plain"></i> },
+// 	{ name: "CSS", icon: <i className="devicon-css3-plain"></i> },
+// 	{ name: "JavaScript", icon: <i className="devicon-javascript-plain"></i> },
+// 	{
+// 		icon: <i className="devicon-typescript-plain"></i>,
+// 		name: "TypeScript",
+// 	},
+// 	{ icon: <i className="devicon-nodejs-plain"></i>, name: "Node.js" },
+// 	{ icon: <i className="devicon-axios-plain"></i>, name: "Axios" },
+// 	{
+// 		icon: <i className="devicon-express-original"></i>,
+// 		name: "Express.js",
+// 	},
+// 	{
+// 		icon: <i className="devicon-ruby-plain"></i>,
+// 		name: "Ruby",
+// 	},
+// 	{
+// 		icon: <i className="devicon-rails-plain"></i>,
+// 		name: "Ruby on Rails",
+// 	},
+// 	{ icon: <i className="devicon-python-plain"></i>, name: "Python" },
+// 	{
+// 		icon: <i className="devicon-react-original"></i>,
+// 		name: "ReactJS",
+// 	},
+// 	{
+// 		icon: <i className="devicon-tailwindcss-original"></i>,
+// 		name: "Tailwind CSS",
+// 	},
+// 	{
+// 		icon: <i className="devicon-mongodb-plain"></i>,
+// 		name: "MongoDB",
+// 	},
+// 	{
+// 		icon: <i className="devicon-postgresql-plain"></i>,
+// 		name: "PostgreSQL",
+// 	},
+// 	{
+// 		icon: <i className="devicon-postman-plain"></i>,
+// 		name: "Postman",
+// 	},
+// 	{ icon: <i className="devicon-git-plain"></i>, name: "Git" },
+// 	{ icon: <i className="devicon-github-original"></i>, name: "GitHub" },
+// 	{ icon: <i className="devicon-inkscape-plain"></i>, name: "Inkscape" },
 
-	{ icon: <i className="devicon-figma-plain"></i>, name: "Figma" },
-	{ icon: <i className="devicon-canva-original"></i>, name: "Canva" },
+// 	{ icon: <i className="devicon-figma-plain"></i>, name: "Figma" },
+// 	{ icon: <i className="devicon-canva-original"></i>, name: "Canva" },
+// ];
+
+export const skills = [
+	{ name: "HTML", icon: SiHtml5 },
+	{ name: "CSS", icon: SiCss3 },
+	{ name: "JavaScript", icon: SiJavascript },
+	{ name: "TypeScript", icon: SiTypescript },
+	{ name: "Node.js", icon: SiNodedotjs },
+	{ name: "Axios", icon: SiAxios },
+	{ name: "Express.js", icon: SiExpress },
+	{ name: "Ruby", icon: SiRuby },
+	{ name: "Ruby on Rails", icon: SiRubyonrails },
+	{ name: "Python", icon: SiPython },
+	{ name: "ReactJS", icon: SiReact },
+	{ name: "Tailwind CSS", icon: SiTailwindcss },
+	{ name: "MongoDB", icon: SiMongodb },
+	{ name: "PostgreSQL", icon: SiPostgresql },
+	{ name: "Postman", icon: SiPostman },
+	{ name: "Git", icon: SiGit },
+	{ name: "GitHub", icon: SiGithub },
+	{ name: "Adobe InDesign", icon: SiAdobeindesign },
+	{ name: "Inkscape", icon: SiInkscape },
+	{ name: "Figma", icon: SiFigma },
+	{ name: "Canva", icon: SiCanva },
 ];
 
 export const projects = [

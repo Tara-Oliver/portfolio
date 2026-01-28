@@ -1,5 +1,6 @@
 import React from "react";
 import { skills } from "../shared-components/util";
+import { SiHtml5, SiCss3, SiJavascript, SiReact } from "react-icons/si";
 
 const About = () => {
 	return (
@@ -30,14 +31,21 @@ const About = () => {
 				</h3>
 				<div className="mb-10 w-20 bg-dkgrey h-1 rounded-full"></div>
 				<ul className="flex flex-wrap justify-center md:justify-start">
-					{skills.map((skill, idx) => (
-						<li
-							className="px-2 py-1 m-1 bg-[rgba(0,0,0,.07)] rounded-[50px]  flex flex-nowrap items-center justify-center"
-							key={idx}>
-							<span className="w-2 mr-4">{skill.icon}</span>
-							<span>{skill.name}</span>
-						</li>
-					))}
+					{skills.map((skill, idx) => {
+						const Icon = skill.icon;
+						return (
+							<li
+								className="px-2 py-1 m-1 bg-[rgba(0,0,0,.07)] rounded-[50px]  flex flex-nowrap items-center justify-center"
+								key={idx}>
+								{/* <span className="w-2 mr-4">{skill.icon}</span> */}
+								<span className="w-2 mr-4">
+									<Icon />
+								</span>
+
+								<span>{skill.name}</span>
+							</li>
+						);
+					})}
 				</ul>
 			</div>
 		</div>
