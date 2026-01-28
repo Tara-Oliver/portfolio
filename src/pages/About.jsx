@@ -37,7 +37,6 @@ const About = () => {
 							<li
 								className="px-2 py-1 m-1 bg-[rgba(0,0,0,.07)] rounded-[50px]  flex flex-nowrap items-center justify-center"
 								key={idx}>
-								{/* <span className="w-2 mr-4">{skill.icon}</span> */}
 								<span className="w-2 mr-4">
 									<Icon />
 								</span>
