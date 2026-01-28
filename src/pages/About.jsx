@@ -20,7 +20,7 @@ const About = () => {
 					considered, clear, and intentional, and about building user-centered
 					digital experiences. Now I’m looking forward to continuing to grow my
 					visual design skills while contributing to thoughtful, well-crafted
-					products that people genuinely enjoy using.
+					digital experiences that make a real impact.
 				</p>
 			</div>
 
