@@ -1,7 +1,6 @@
 import React from "react";
 import { skills } from "../shared-components/util";
 
-
 const About = () => {
 	return (
 		<div className="flex flex-col h-full px-4 md:px-14 py-20 sect-con">
@@ -17,11 +16,11 @@ const About = () => {
 					collaborating across teams to bring ideas to life. My experience in
 					product development has also sharpened my analytical thinking, ability
 					to work under pressure, and attention to detail— talents that
-					translate seamlessly into tech. I’m passionate about building
-					user-centered solutions, learning new technologies, and tackling
-					challenges with a strategic, hands-on approach. Now I’m looking
-					forward to contributing fresh perspectives, streamlining processes,
-					and building intuitive digital experiences that make a real impact.
+					translate seamlessly into tech. I’m passionate about design that feels
+					considered, clear, and intentional, and about building user-centered
+					digital experiences. Now I’m looking forward to continuing to grow my
+					visual design skills while contributing to thoughtful, well-crafted
+					products that people genuinely enjoy using.
 				</p>
 			</div>
 
