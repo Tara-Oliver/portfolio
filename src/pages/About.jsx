@@ -12,16 +12,17 @@ const About = () => {
 				<div className="mb-10 w-20 bg-dkgrey h-1 rounded-full"></div>
 				<p className="text-lg">
 					Some careers follow a straight path—mine has been about adaptability.
-					After more than a decade in the fashion industry, I’ve honed my skills
-					in solving complex problems, managing fast-moving projects, and
-					collaborating across teams to bring ideas to life. My experience in
-					product development has also sharpened my analytical thinking, ability
-					to work under pressure, and attention to detail— talents that
-					translate seamlessly into tech. I’m passionate about design that feels
-					considered, clear, and intentional, and about building user-centered
-					digital experiences. Now I’m looking forward to continuing to grow my
-					visual design skills while contributing to thoughtful, well-crafted
-					digital experiences that make a real impact.
+					After more than a decade in the fashion industry, I got good at
+					solving complex problems, keeping fast-moving projects on track, and
+					working across teams to turn ideas into finished products. Years in
+					product development sharpened my attention to detail and my instinct
+					for catching what's wrong before it reaches the customer, and those
+					habits carry straight over into tech. Most recently I've worked on the
+					technical side of the product, testing features and writing up bugs
+					clearly enough for engineers to reproduce and fix them. I'm looking
+					for a role where that attention to detail is the point, in quality,
+					product data, or product operations, on a team that cares how things
+					work for the people using them.
 				</p>
 			</div>
 
